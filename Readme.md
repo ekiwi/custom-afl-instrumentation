@@ -11,8 +11,7 @@ uses branch coverage as its main metric.
 
 A very simple example (provided in `main.c`) looks like this:
 
-~~~{.c}
-
+```c
 int main() {
 	afl_init();
 
@@ -27,8 +26,7 @@ int main() {
 			afl_set(0, 1);
 	}
 }
-
-~~~
+```
 
 Here `afl_init` initialized the shared memory region and
 the pipes that are used to communicate with AFL.
